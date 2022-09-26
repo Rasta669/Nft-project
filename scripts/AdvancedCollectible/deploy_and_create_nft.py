@@ -30,6 +30,7 @@ def deploy_and_create_nft():
         ##publish_source=True,
     )
     ##fund_with_link(collectible.address, Web3.toWei(0.2, "ether"), None, None)
+    ##adding the contract as a consumer of vrf v2 to receive randomness
     add_consumer_contract(collectible.address, 686)
     tx = collectible.createCollectible({"from": account})
     tx.wait(1)

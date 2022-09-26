@@ -4,6 +4,10 @@ pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+/*this is a simple contract that can create nft token, mint it and 
+sets its token uri.
+*/
+
 contract nftDogie is ERC721 {
     uint256 counter;
     uint256 public NftId;

@@ -10,6 +10,11 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 //import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
 
+/* This contract when deployed can create nft dogie collectible and assign it to a 
+random dog breed(pug, shiba-inu, st-benaerd) by the vrf coordinator
+and also can set the token uri of the assigned breed.
+*/
+
 contract AdvancedCollectible is ERC721URIStorage, VRFConsumerBaseV2 {
     uint256 public tokenCounter;
     bytes32 keyHash;
